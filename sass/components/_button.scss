@@ -1,0 +1,25 @@
+.button {
+    display: block;
+    margin: 0 auto;
+    padding:20px 33px;
+    border-radius:20px;
+
+    @include font(1.6rem,1.8,bold);
+    @extend %font-prim; 
+
+    color: $color-light;   
+    background: $color-accent;
+    &:hover {
+        color:$color-hover;
+    }
+}
+
+.span-color {
+    color:$color-accent;
+}
+
+
+
+
+
+

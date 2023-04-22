@@ -1,0 +1,45 @@
+.dropbtn {
+    width: 100%;
+    color: $color-dark;
+    padding: 30px 0;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    border-top: 1px  solid $color-dark;
+    text-align: left;
+    cursor: pointer;   
+    @extend %transition;
+}
+  
+.dropdown {
+   position: relative;
+   display: block;
+    
+
+}
+  
+.dropdown-content {
+    padding-left: 15px;
+    display: none;
+    position: absolute;
+    background-color: $color-light;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+   color: $color-dark;
+   padding: 30px 0px;
+   @include font (2rem, 1.9, normal);
+   text-decoration: none;
+   display: block;
+}  
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    color:$color-accent;
+}

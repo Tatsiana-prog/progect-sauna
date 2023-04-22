@@ -1,0 +1,139 @@
+.header {
+    padding: 90px 0;
+    width: 100%;
+    height: 850px;
+    filter: brightness(65%);
+    background-image: url('../img/header/bg-1.jpg');  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.header__row {
+    padding: 0 15px;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-bg-nav;
+    border-radius: 5px;
+    //*tablet big
+    @media (max-width: 1199px) {
+        max-width: 900px;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        max-width: 720px;
+        margin-bottom: 70px;
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        max-width: 540px;
+       }
+    //*mobile xs
+    @media (max-width: 575px) {
+        max-width: 320px;
+    }
+}
+
+.header__content {
+    width: 60%;
+    margin: 0;
+    //*mobile
+    @media (max-width: 767px) {
+        width: 80%; 
+    }
+    //*mobile xs
+    @media (max-width: 575px) {
+        width: 100%; 
+        text-align: center;
+    } 
+}
+
+.header__title {
+    margin-bottom: 73px;
+    .span {
+        @include font (5rem,1.2,bold);
+    }
+}
+
+.header__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.header__list {
+    @include font (2.0rem, 1.5, 600);
+    color: $color-text;
+    //*mobile
+    @media (max-width: 767px) {
+        @include font (1.8rem, 1.5, 600);
+       }
+       //*mobile xs
+    @media (max-width: 575px) {
+        @include font (1.6rem, 1.5, 600);
+    }
+}
+
+.header__text {
+    padding-left: 10px;
+    //*mobile xs
+    @media (max-width: 575px) {
+        padding-left: 7px;
+    }
+}
+
+.header__phone {
+    margin-right: 0;
+    //*tablet small
+    @media (max-width: 991px) {
+        display:none;
+    }   
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    //*tablet small
+    @media (max-width: 991px) {
+        display:none;
+    }
+}
+
+.header__link {
+    color:$color-text;
+    @include font (1.8rem, 1.9, bold);   
+    @extend %transition;
+    cursor: pointer;  
+    &:hover {
+        color:$color-accent;
+    }        
+}
+
+//modal windows
+.header__modal {
+    display: none;
+    //*tablet small
+    @media (max-width: 991px) {
+        display: block;
+    } 
+}
+
+
+
+
+

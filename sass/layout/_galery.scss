@@ -1,0 +1,33 @@
+.section-galery {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background: #F1F1F1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    //*mobile
+    @media (max-width: 767px) {
+        padding: 60px 0;
+    }    
+}
+
+.galery__title {
+    margin-bottom: 53px;
+}
+
+.galery__video {
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.7);    
+    height: 475px;
+    margin-bottom: 39px;
+}
+
+.galery__photos {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.galery__photo {
+    width: 275px;
+    height: 165px;
+    box-shadow: 0px 4px 15px $color-shadow;
+}

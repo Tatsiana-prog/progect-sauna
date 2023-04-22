@@ -1,0 +1,51 @@
+.icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/icon/icon-list.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 25px;
+        height: 25px;
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        width: 20px;
+        height: 20px;
+    }
+    //*mobile xs
+    @media (max-width: 575px) {
+        width: 17px;
+        height: 17px;
+    }
+    
+}
+
+//icons for social networks
+.social-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.social-icon_1 {   
+    background-image: url(/img/icon/icon-1.svg);   
+}
+
+.social-icon_2 {
+    background-image: url(/img/icon/icon-2.svg);   
+}
+
+.social-icon_3 {   
+    background-image: url(/img/icon/icon-3.svg);   
+}
+
+.social-icon_4 {
+    background-image: url(/img/icon/icon-4.svg);    
+}

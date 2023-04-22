@@ -1,0 +1,73 @@
+.section-reviews {
+    width: 100%;
+    padding: 100px 0;
+    background: $color-slider-bg;
+    background-image: url('../img/reviews/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //*mobile
+    @media (max-width: 767px) {
+        padding: 60px 0;
+    }
+}
+
+.reviews__title {
+    text-align: center;
+    margin-bottom: 60px; 
+}
+
+.reviews {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.reviews__slider {
+    padding: 30px;
+    background:$color-bg-slider;
+    position: relative;
+    width: 40%;
+    max-height: 40%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 30px;
+    //*mobile
+    @media (max-width: 767px) {
+        width: 70%;
+    }  
+    //*mobile xs
+    @media (max-width: 575px) {
+        width: 100%;
+    }  
+}
+
+.review {
+    max-width: 100%;
+}
+.review__text { 
+    @include font (2.0rem, 1.2, normal);   
+    color:$color-dark;
+    margin-bottom: 20px;   
+}
+
+.review__photo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 100px; /* задаете свои размеры */
+    height: 100px;
+    overflow: hidden;
+    background: $color-light;
+    padding: 5px; /* создание отступов */
+    border-radius: 50%;
+    border: #aaa 1px solid;
+    box-shadow: 0px 1px 1px 1px $color-shadow /* тень */  
+}
+
+.review__name {
+    @include font (2.5rem, 1.2, bold); 
+    color:$color-dark;
+}

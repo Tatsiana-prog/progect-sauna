@@ -1,0 +1,20 @@
+.section-questions {
+    padding: 100px 0;
+    //*mobile
+    @media (max-width: 767px) {
+      padding: 60px 0;
+    }
+}
+
+.questions__title {
+    color:$color-dark;
+    margin-bottom: 40px;
+    //*tablet small
+   @media (max-width: 991px) {
+      text-align: center; 
+    }
+    .span {
+      font-size: 40px;
+    }
+}
+
