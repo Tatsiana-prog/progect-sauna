@@ -270,19 +270,19 @@
 }
 
 .social-icon_1 {
-  background-image: url(/img/icon/icon-1.svg);
+  background-image: url("../img/icon/icon-1.svg");
 }
 
 .social-icon_2 {
-  background-image: url(/img/icon/icon-2.svg);
+  background-image: url("../img/icon/icon-2.svg");
 }
 
 .social-icon_3 {
-  background-image: url(/img/icon/icon-3.svg);
+  background-image: url("../img/icon/icon-3.svg");
 }
 
 .social-icon_4 {
-  background-image: url(/img/icon/icon-4.svg);
+  background-image: url("../img/icon/icon-4.svg");
 }
 
 /* Reset and base styles  */
